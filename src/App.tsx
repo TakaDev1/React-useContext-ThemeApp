@@ -6,13 +6,15 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 function App() {
   return (
     <>
-      <h1>React-useContext-ThemeApp</h1>
-      <ThemeProvider>
-        <div>
-          <ThemeBox />
-          <ThemeToggleButton />
-        </div>
-      </ThemeProvider>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-700">
+        <h1>React-useContext-ThemeApp</h1>
+        <ThemeProvider>
+          <div>
+            <ThemeBox />
+            <ThemeToggleButton />
+          </div>
+        </ThemeProvider>
+      </div>
     </>
   );
 }
